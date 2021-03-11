@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">639924937135-cakngtco9qnkono2p4rfjmdb942ut6rb.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">639924937135</string>
+    <string name="google_api_key" translatable="false">AIzaSyAsuI4OjNyKsjN2a5NX6pXe9IOtjWsLn_c</string>
+    <string name="google_app_id" translatable="false">1:639924937135:android:ac32add9106d0931768f5a</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAsuI4OjNyKsjN2a5NX6pXe9IOtjWsLn_c</string>
+    <string name="google_storage_bucket" translatable="false">santiago-test-c6a4c.appspot.com</string>
+    <string name="project_id" translatable="false">santiago-test-c6a4c</string>
+</resources>

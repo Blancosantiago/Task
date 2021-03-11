@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "639924937135",
+    "project_id": "santiago-test-c6a4c",
+    "storage_bucket": "santiago-test-c6a4c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639924937135:android:1d59c019a9e81d68768f5a",
+        "android_client_info": {
+          "package_name": "com.deskree.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639924937135-cakngtco9qnkono2p4rfjmdb942ut6rb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsuI4OjNyKsjN2a5NX6pXe9IOtjWsLn_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639924937135-cakngtco9qnkono2p4rfjmdb942ut6rb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "639924937135-u1hutmkhlunqj4kkv1e4s01th2nfugho.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.deskree.test"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639924937135:android:ac32add9106d0931768f5a",
+        "android_client_info": {
+          "package_name": "com.example.autontificatio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639924937135-cakngtco9qnkono2p4rfjmdb942ut6rb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsuI4OjNyKsjN2a5NX6pXe9IOtjWsLn_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639924937135-cakngtco9qnkono2p4rfjmdb942ut6rb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "639924937135-u1hutmkhlunqj4kkv1e4s01th2nfugho.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.deskree.test"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

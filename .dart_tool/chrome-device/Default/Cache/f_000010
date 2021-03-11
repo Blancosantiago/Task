@@ -1,0 +1,505 @@
+define(['dart_sdk', 'packages/provider/src/provider.dart', 'packages/autontificatio/provider/taskProvider.dart', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/material/colors.dart', 'packages/flutter/src/widgets/icon.dart', 'packages/flutter/src/material/icons.dart', 'packages/flutter/src/widgets/widget_span.dart', 'packages/autontificatio/Widget/ShowDialogNewTask.dart', 'packages/flutter/src/widgets/async.dart', 'packages/provider/src/selector.dart', 'packages/flutter/src/widgets/scroll_view.dart', 'packages/flutter/src/painting/edge_insets.dart', 'packages/autontificatio/Widget/CardTask.dart'], (function load__packages__autontificatio__page__TaskPage_dart(dart_sdk, packages__provider__src__provider$46dart, packages__autontificatio__provider__taskProvider$46dart, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__material__colors$46dart, packages__flutter__src__widgets__icon$46dart, packages__flutter__src__material__icons$46dart, packages__flutter__src__widgets__widget_span$46dart, packages__autontificatio__Widget__ShowDialogNewTask$46dart, packages__flutter__src__widgets__async$46dart, packages__provider__src__selector$46dart, packages__flutter__src__widgets__scroll_view$46dart, packages__flutter__src__painting__edge_insets$46dart, packages__autontificatio__Widget__CardTask$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const async = dart_sdk.async;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const provider = packages__provider__src__provider$46dart.src__provider;
+  const taskProvider = packages__autontificatio__provider__taskProvider$46dart.provider__taskProvider;
+  const scaffold = packages__flutter__src__material__icon_button$46dart.src__material__scaffold;
+  const floating_action_button = packages__flutter__src__material__icon_button$46dart.src__material__floating_action_button;
+  const dialog = packages__flutter__src__material__icon_button$46dart.src__material__dialog;
+  const app_bar = packages__flutter__src__material__icon_button$46dart.src__material__app_bar;
+  const colors = packages__flutter__src__material__colors$46dart.src__material__colors;
+  const icon = packages__flutter__src__widgets__icon$46dart.src__widgets__icon;
+  const icons = packages__flutter__src__material__icons$46dart.src__material__icons;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const text = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
+  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
+  const ShowDialogNewTask = packages__autontificatio__Widget__ShowDialogNewTask$46dart.Widget__ShowDialogNewTask;
+  const async$ = packages__flutter__src__widgets__async$46dart.src__widgets__async;
+  const consumer = packages__provider__src__selector$46dart.src__consumer;
+  const scroll_view = packages__flutter__src__widgets__scroll_view$46dart.src__widgets__scroll_view;
+  const edge_insets = packages__flutter__src__painting__edge_insets$46dart.src__painting__edge_insets;
+  const CardTask = packages__autontificatio__Widget__CardTask$46dart.Widget__CardTask;
+  var TaskPage = Object.create(dart.library);
+  var $length = dartx.length;
+  var $_get = dartx._get;
+  dart._checkModuleNullSafetyMode(false);
+  var T = {
+    TareasListL: () => (T.TareasListL = dart.constFn(dart.legacy(taskProvider.TareasList)))(),
+    _LocationL: () => (T._LocationL = dart.constFn(dart.legacy(widget_inspector._Location)))(),
+    AddNewTaskL: () => (T.AddNewTaskL = dart.constFn(dart.legacy(ShowDialogNewTask.AddNewTask)))(),
+    BuildContextL: () => (T.BuildContextL = dart.constFn(dart.legacy(framework.BuildContext)))(),
+    BuildContextLToAddNewTaskL: () => (T.BuildContextLToAddNewTaskL = dart.constFn(dart.fnType(T.AddNewTaskL(), [T.BuildContextL()])))(),
+    VoidToNull: () => (T.VoidToNull = dart.constFn(dart.fnType(core.Null, [])))(),
+    FutureBuilderOfvoid: () => (T.FutureBuilderOfvoid = dart.constFn(async$.FutureBuilder$(dart.void)))(),
+    ConsumerOfTareasListL: () => (T.ConsumerOfTareasListL = dart.constFn(consumer.Consumer$(T.TareasListL())))(),
+    CardTasksL: () => (T.CardTasksL = dart.constFn(dart.legacy(CardTask.CardTasks)))(),
+    intL: () => (T.intL = dart.constFn(dart.legacy(core.int)))(),
+    BuildContextLAndintLToCardTasksL: () => (T.BuildContextLAndintLToCardTasksL = dart.constFn(dart.fnType(T.CardTasksL(), [T.BuildContextL(), T.intL()])))(),
+    ListViewL: () => (T.ListViewL = dart.constFn(dart.legacy(scroll_view.ListView)))(),
+    WidgetL: () => (T.WidgetL = dart.constFn(dart.legacy(framework.Widget)))(),
+    BuildContextLAndTareasListLAndWidgetLToListViewL: () => (T.BuildContextLAndTareasListLAndWidgetLToListViewL = dart.constFn(dart.fnType(T.ListViewL(), [T.BuildContextL(), T.TareasListL(), T.WidgetL()])))(),
+    ContainerL: () => (T.ContainerL = dart.constFn(dart.legacy(container.Container)))(),
+    AsyncSnapshotL: () => (T.AsyncSnapshotL = dart.constFn(dart.legacy(async$.AsyncSnapshot)))(),
+    BuildContextLAndAsyncSnapshotLToContainerL: () => (T.BuildContextLAndAsyncSnapshotLToContainerL = dart.constFn(dart.fnType(T.ContainerL(), [T.BuildContextL(), T.AsyncSnapshotL()])))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 27,
+        [_Location_line]: 21,
+        [_Location_file]: null
+      });
+    },
+    get C1() {
+      return C[1] = dart.constList([C[2] || CT.C2], T._LocationL());
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 21,
+        [_Location_file]: "file:///C:/Users/dartf/Documents/flutter%20app/autontificatio/lib/page/TaskPage.dart"
+      });
+    },
+    get C4() {
+      return C[4] = dart.constList([], T._LocationL());
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[4] || CT.C4,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 26,
+        [_Location_file]: "file:///C:/Users/dartf/Documents/flutter%20app/autontificatio/lib/page/TaskPage.dart"
+      });
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "backgroundColor",
+        [_Location_column]: 9,
+        [_Location_line]: 20,
+        [_Location_file]: null
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 21,
+        [_Location_file]: null
+      });
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 9,
+        [_Location_line]: 22,
+        [_Location_file]: null
+      });
+    },
+    get C6() {
+      return C[6] = dart.constList([C[7] || CT.C7, C[8] || CT.C8, C[9] || CT.C9], T._LocationL());
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[6] || CT.C6,
+        [_Location_name]: null,
+        [_Location_column]: 29,
+        [_Location_line]: 19,
+        [_Location_file]: "file:///C:/Users/dartf/Documents/flutter%20app/autontificatio/lib/page/TaskPage.dart"
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 21,
+        [_Location_line]: 32,
+        [_Location_file]: null
+      });
+    },
+    get C11() {
+      return C[11] = dart.constList([C[12] || CT.C12], T._LocationL());
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[11] || CT.C11,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 32,
+        [_Location_file]: "file:///C:/Users/dartf/Documents/flutter%20app/autontificatio/lib/page/TaskPage.dart"
+      });
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 9,
+        [_Location_line]: 32,
+        [_Location_file]: null
+      });
+    },
+    get C14() {
+      return C[14] = dart.constList([C[15] || CT.C15], T._LocationL());
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[14] || CT.C14,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 31,
+        [_Location_file]: "file:///C:/Users/dartf/Documents/flutter%20app/autontificatio/lib/page/TaskPage.dart"
+      });
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: edge_insets.EdgeInsets.prototype,
+        [EdgeInsets_bottom]: 10,
+        [EdgeInsets_right]: 10,
+        [EdgeInsets_top]: 10,
+        [EdgeInsets_left]: 10
+      });
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "id",
+        [_Location_column]: 23,
+        [_Location_line]: 44,
+        [_Location_file]: null
+      });
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "horaFinal",
+        [_Location_column]: 23,
+        [_Location_line]: 45,
+        [_Location_file]: null
+      });
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "descripcion",
+        [_Location_column]: 23,
+        [_Location_line]: 46,
+        [_Location_file]: null
+      });
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "finish",
+        [_Location_column]: 23,
+        [_Location_line]: 47,
+        [_Location_file]: null
+      });
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "hora",
+        [_Location_column]: 23,
+        [_Location_line]: 48,
+        [_Location_file]: null
+      });
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 23,
+        [_Location_line]: 49,
+        [_Location_file]: null
+      });
+    },
+    get C18() {
+      return C[18] = dart.constList([C[19] || CT.C19, C[20] || CT.C20, C[21] || CT.C21, C[22] || CT.C22, C[23] || CT.C23, C[24] || CT.C24], T._LocationL());
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[18] || CT.C18,
+        [_Location_name]: null,
+        [_Location_column]: 46,
+        [_Location_line]: 43,
+        [_Location_file]: "file:///C:/Users/dartf/Documents/flutter%20app/autontificatio/lib/page/TaskPage.dart"
+      });
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 21,
+        [_Location_line]: 41,
+        [_Location_file]: null
+      });
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "itemCount",
+        [_Location_column]: 21,
+        [_Location_line]: 42,
+        [_Location_file]: null
+      });
+    },
+    get C29() {
+      return C[29] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "itemBuilder",
+        [_Location_column]: 21,
+        [_Location_line]: 43,
+        [_Location_file]: null
+      });
+    },
+    get C26() {
+      return C[26] = dart.constList([C[27] || CT.C27, C[28] || CT.C28, C[29] || CT.C29], T._LocationL());
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[26] || CT.C26,
+        [_Location_name]: null,
+        [_Location_column]: 56,
+        [_Location_line]: 40,
+        [_Location_file]: "file:///C:/Users/dartf/Documents/flutter%20app/autontificatio/lib/page/TaskPage.dart"
+      });
+    },
+    get C32() {
+      return C[32] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "builder",
+        [_Location_column]: 19,
+        [_Location_line]: 40,
+        [_Location_file]: null
+      });
+    },
+    get C31() {
+      return C[31] = dart.constList([C[32] || CT.C32], T._LocationL());
+    },
+    get C30() {
+      return C[30] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[31] || CT.C31,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 39,
+        [_Location_file]: "file:///C:/Users/dartf/Documents/flutter%20app/autontificatio/lib/page/TaskPage.dart"
+      });
+    },
+    get C35() {
+      return C[35] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 17,
+        [_Location_line]: 38,
+        [_Location_file]: null
+      });
+    },
+    get C36() {
+      return C[36] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 39,
+        [_Location_file]: null
+      });
+    },
+    get C34() {
+      return C[34] = dart.constList([C[35] || CT.C35, C[36] || CT.C36], T._LocationL());
+    },
+    get C33() {
+      return C[33] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[34] || CT.C34,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 37,
+        [_Location_file]: "file:///C:/Users/dartf/Documents/flutter%20app/autontificatio/lib/page/TaskPage.dart"
+      });
+    },
+    get C39() {
+      return C[39] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "future",
+        [_Location_column]: 11,
+        [_Location_line]: 35,
+        [_Location_file]: null
+      });
+    },
+    get C40() {
+      return C[40] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "builder",
+        [_Location_column]: 11,
+        [_Location_line]: 36,
+        [_Location_file]: null
+      });
+    },
+    get C38() {
+      return C[38] = dart.constList([C[39] || CT.C39, C[40] || CT.C40], T._LocationL());
+    },
+    get C37() {
+      return C[37] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[38] || CT.C38,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 34,
+        [_Location_file]: "file:///C:/Users/dartf/Documents/flutter%20app/autontificatio/lib/page/TaskPage.dart"
+      });
+    },
+    get C43() {
+      return C[43] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "floatingActionButton",
+        [_Location_column]: 7,
+        [_Location_line]: 19,
+        [_Location_file]: null
+      });
+    },
+    get C44() {
+      return C[44] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "appBar",
+        [_Location_column]: 7,
+        [_Location_line]: 31,
+        [_Location_file]: null
+      });
+    },
+    get C45() {
+      return C[45] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "body",
+        [_Location_column]: 7,
+        [_Location_line]: 34,
+        [_Location_file]: null
+      });
+    },
+    get C42() {
+      return C[42] = dart.constList([C[43] || CT.C43, C[44] || CT.C44, C[45] || CT.C45], T._LocationL());
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[42] || CT.C42,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 18,
+        [_Location_file]: "file:///C:/Users/dartf/Documents/flutter%20app/autontificatio/lib/page/TaskPage.dart"
+      });
+    }
+  }, false);
+  var C = Array(46).fill(void 0);
+  var I = ["package:autontificatio/page/TaskPage.dart"];
+  var loadedProducts = dart.privateName(TaskPage, "Taskpages.loadedProducts");
+  var _refreshProducts = dart.privateName(TaskPage, "_refreshProducts");
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  var EdgeInsets_bottom = dart.privateName(edge_insets, "EdgeInsets.bottom");
+  var EdgeInsets_right = dart.privateName(edge_insets, "EdgeInsets.right");
+  var EdgeInsets_top = dart.privateName(edge_insets, "EdgeInsets.top");
+  var EdgeInsets_left = dart.privateName(edge_insets, "EdgeInsets.left");
+  TaskPage.Taskpages = class Taskpages extends framework.StatelessWidget {
+    get loadedProducts() {
+      return this[loadedProducts];
+    }
+    set loadedProducts(value) {
+      this[loadedProducts] = value;
+    }
+    [_refreshProducts](context) {
+      return async.async(dart.void, function* _refreshProducts() {
+        yield provider.Provider.of(T.TareasListL(), context, {listen: false}).fetchtasks();
+      });
+    }
+    build(context) {
+      let task1 = provider.Provider.of(T.TareasListL(), context).fetchtasks();
+      return new scaffold.Scaffold.new({floatingActionButton: new floating_action_button.FloatingActionButton.new({backgroundColor: colors.Colors.orange._get(600), child: new icon.Icon.new(icons.Icons.add, {$creationLocationd_0dea112b090073317d4: C[0] || CT.C0}), onPressed: dart.fn(() => {
+            dialog.showDialog(dart.dynamic, {context: context, builder: dart.fn(context => new ShowDialogNewTask.AddNewTask.new({$creationLocationd_0dea112b090073317d4: C[3] || CT.C3}), T.BuildContextLToAddNewTaskL())});
+          }, T.VoidToNull()), $creationLocationd_0dea112b090073317d4: C[5] || CT.C5}), appBar: new app_bar.AppBar.new({title: new text.Text.new("Todo", {$creationLocationd_0dea112b090073317d4: C[10] || CT.C10}), $creationLocationd_0dea112b090073317d4: C[13] || CT.C13}), body: new (T.FutureBuilderOfvoid()).new({future: provider.Provider.of(T.TareasListL(), context).fetchtasks(), builder: dart.fn((ctx, dataSnapshot) => new container.Container.new({width: 1 / 0, child: new (T.ConsumerOfTareasListL()).new({builder: dart.fn((ctx, tasks, _) => new scroll_view.ListView.builder({padding: C[16] || CT.C16, itemCount: tasks.items[$length], itemBuilder: dart.fn((ctx, i) => new CardTask.CardTasks.new({id: tasks.items[$_get](i).id, horaFinal: tasks.items[$_get](i).horaFinal, descripcion: tasks.items[$_get](i).descripcion, finish: tasks.items[$_get](i).terminado, hora: tasks.items[$_get](i).hora, title: tasks.items[$_get](i).titulo, $creationLocationd_0dea112b090073317d4: C[17] || CT.C17}), T.BuildContextLAndintLToCardTasksL()), $creationLocationd_0dea112b090073317d4: C[25] || CT.C25}), T.BuildContextLAndTareasListLAndWidgetLToListViewL()), $creationLocationd_0dea112b090073317d4: C[30] || CT.C30}), $creationLocationd_0dea112b090073317d4: C[33] || CT.C33}), T.BuildContextLAndAsyncSnapshotLToContainerL()), $creationLocationd_0dea112b090073317d4: C[37] || CT.C37}), $creationLocationd_0dea112b090073317d4: C[41] || CT.C41});
+    }
+  };
+  (TaskPage.Taskpages.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[loadedProducts] = [1, 2, 3, 4, 5, 5, 6, 6, 6, 6, 6, 6];
+    TaskPage.Taskpages.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = TaskPage.Taskpages.prototype;
+  dart.addTypeTests(TaskPage.Taskpages);
+  dart.addTypeCaches(TaskPage.Taskpages);
+  dart.setMethodSignature(TaskPage.Taskpages, () => ({
+    __proto__: dart.getMethods(TaskPage.Taskpages.__proto__),
+    [_refreshProducts]: dart.fnType(dart.legacy(async.Future$(dart.void)), [dart.legacy(framework.BuildContext)]),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }));
+  dart.setLibraryUri(TaskPage.Taskpages, I[0]);
+  dart.setFieldSignature(TaskPage.Taskpages, () => ({
+    __proto__: dart.getFields(TaskPage.Taskpages.__proto__),
+    loadedProducts: dart.fieldType(dart.legacy(core.List))
+  }));
+  dart.trackLibraries("packages/autontificatio/page/TaskPage.dart", {
+    "package:autontificatio/page/TaskPage.dart": TaskPage
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["TaskPage.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAQO;;;;;;uBAEsC;AAAd;AACuC,QAAlE,MAAe,AAAuC,sCAAxB,OAAO,WAAU;MACjD;;UAG0B;AAClB,kBAAiB,AAAwB,sCAAT,OAAO;AAC7C,YAAO,kDACiB,sEACI,AAAM,0BAAC,aACxB,kBAAW,sFACP;AAMR,YALD,0CACW,OAAO,WACP,QAAc,WACd;+FAKP,+BACC,kBAAK,qIAER,2CACe,AAAwB,sCAAT,OAAO,yBAC9B,SAAC,KAAK,iBACN,kDAEI,8CACI,SAAC,KAAK,OAAO,MAAe,uEAExB,AAAM,AAAM,KAAP,8BACH,SAAC,KAAK,MAAM,gCACnB,AAAM,AAAK,AAAI,KAAV,cAAO,CAAC,iBACN,AAAM,AAAK,AAAI,KAAV,cAAO,CAAC,0BACX,AAAM,AAAK,AAAI,KAAV,cAAO,CAAC,uBAClB,AAAM,AAAK,AAAI,KAAV,cAAO,CAAC,mBACf,AAAM,AAAK,AAAI,KAAV,cAAO,CAAC,eACZ,AAAM,AAAK,AAAI,KAAV,cAAO,CAAC;IAMxC;;;;IA9CK,uBAAiB,CAAC,GAAG,GAAG,GAAG,GAAG,GAAG,GAAG,GAAG,GAAG,GAAG,GAAG,GAAG;;;EA+C1D","file":"../../../../../../../packages/autontificatio/page/TaskPage.dart.lib.js"}');
+  // Exports:
+  return {
+    page__TaskPage: TaskPage
+  };
+}));
+
+//# sourceMappingURL=TaskPage.dart.lib.js.map
