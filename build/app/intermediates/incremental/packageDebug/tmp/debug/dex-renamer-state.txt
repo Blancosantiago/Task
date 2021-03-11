@@ -1,4 +1,0 @@
-#Thu Mar 11 03:00:02 ART 2021
-base.0=C\:\\Users\\dartf\\Documents\\flutter app\\autontificatio\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
